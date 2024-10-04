@@ -6,7 +6,7 @@
 
 #include <iostream>
 #include "Node.h"
-#include "string.h"
+#include <string>
 
 Node::Node() : numRes(0), voltage(0), voltageIsSet(false) {} // Initialize Node
 
@@ -30,11 +30,9 @@ void Node::setVoltage(double voltage_) {
     voltageIsSet = true;
 }
 
-// void Node::setVoltageInternally(double voltage_) {
-//     if () {
-
-//     }
-// }
+void Node::setVoltageInternally(double voltage_) {
+    voltage = voltage_
+}
 
 bool Node::isVoltageSet() {
     return voltageIsSet;

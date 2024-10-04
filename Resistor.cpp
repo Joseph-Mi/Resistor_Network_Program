@@ -8,7 +8,6 @@
 
 #include <iomanip>
 #include <iostream>
-#include "string.h"
 
 
 // functions //
@@ -41,9 +40,9 @@ void Resistor::print() {
 int Resistor::getOtherEndpoint(int nodeIndex) {
   if (nodeIndex == endpointNodeIDs[0]) {
     return endpointNodeIDs[1];
-  } 
+  } else if (nodeIndex == endpointNodeIDs[1]) {
+    return endpointNodeIDs[0];  // Return the other node ID
+  }
   
-  return endpointNodeIDs[0];  // Return the other node ID
-  
-  //add a last error check if nodeIndex is not in endpointNodeIDs at all if needed
+  return -1; // if nodeID not endpotsNodeIDs at all (not connected at alll)
 }

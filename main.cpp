@@ -50,11 +50,27 @@ void handlePrintR(stringstream& ss);
 void handleDeleteR(stringstream& ss);
 void handleSetV(stringstream& ss);
 
+bool getInteger(stringstream& ss, int& x) {
+  ss >> x;
+  return !ss.fail();
+}
+
+bool getString(stringstream& ss, string& s) {
+  ss >> s;
+  return !ss.fail();
+}
+
+bool getDouble(stringstream& ss, double& s) {
+  ss >> s;
+  return !ss.fail();
+}
+
 int main() {
   string line;
   cout << ">>> ";
   cout.flush();
   // TODO: Implement the main function here
+
   return 0;
 }
 
