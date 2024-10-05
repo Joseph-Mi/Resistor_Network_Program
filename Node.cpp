@@ -45,3 +45,4 @@ int Node::getNumRes() {
 int* Node::getResIDArray() {
     return resIDArray;
 }
+ 
