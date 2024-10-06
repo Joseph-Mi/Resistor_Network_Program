@@ -17,7 +17,7 @@ bool Node::canAddResistor() {
 void Node::addResistor(int rIndex) {
     if (canAddResistor()) {
         resIDArray[numRes] = rIndex;
-        numRes += 1;
+        numRes++;
     }
 }
 
@@ -31,7 +31,7 @@ void Node::setVoltage(double voltage_) {
 }
 
 void Node::setVoltageInternally(double voltage_) {
-    voltage = voltage_
+    voltage = voltage_;
 }
 
 bool Node::isVoltageSet() {
