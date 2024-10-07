@@ -274,3 +274,5 @@ void handleSetV(stringstream& ss) {
     nodes[nodeId - 1].setVoltage(voltage);
     cout << "Set: node " << nodeId << " to " << fixed << setprecision(2) << voltage << " Volts" << endl;
 }
+
+//add solve functionality
